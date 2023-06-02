@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.youlucsk.ym3_11"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dkgray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvr2"
+                android:layout_width="399dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="353dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="657dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:clickable="true">
+
+        </com.baidu.mapapi.map.MapView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="10dip">
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/pre_"
+                android:onClick="nodeClick"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/next_"
+                android:onClick="nodeClick"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

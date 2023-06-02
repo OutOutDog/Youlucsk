@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".ym3" >
+
+    <TextView
+        android:id="@+id/diqu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="市内快递配送" />
+
+    <!--设置底部导航栏 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请进行选择和输入" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否为机动车" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是否首尾相连" />
+
+    </LinearLayout>
+
+    <include
+
+        android:id="@+id/footbar_layout_ly"
+
+        layout="@layout/y_b_j3lingjian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="74dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_below="@+id/footbar_layout_ly"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <!--        <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tVc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+                    </LinearLayout>
+                </ScrollView>-->
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="106dp"
+            android:background="@drawable/bg_green_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_poiSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/lv_poiSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="beforeDescendants"
+                android:drawSelectorOnTop="true"
+                android:fastScrollEnabled="true"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+
+<!--        android:layout_width="fill_parent"-->
+
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_alignParentBottom="true">-->
+
+
+<!--        &lt;!&ndash;引用底部导航栏的布局文件 &ndash;&gt;-->
+
+<!--        <include-->
+
+<!--            android:id="@+id/footbar_layout_ly"-->
+
+<!--            layout="@layout/activity_d_bdjl1" />-->
+
+
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>
+
